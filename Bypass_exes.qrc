@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/exes">
+        <file>bypass/EasyAntiCheat_x64.dll</file>
+        <file>bypass/Gears5_EACbypass.exe</file>
+        <file>bypass/GRB_BE.exe</file>
+        <file>bypass/Outlaws-Win64-Shipping_BE.exe</file>
+        <file>bypass/SAOFB_Launcher.exe</file>
+        <file>bypass/Wildland Bypass.exe</file>
+    </qresource>
+</RCC>
