@@ -22,9 +22,9 @@ bool Confirmation::hashIsEqual(QByteArray fileHash){
      file.close();
      qDebug() << sha.result().toHex()<< "\n" << fileHash;
      if(sha.result().toHex() == fileHash){
-     ui -> bypassCBox -> setChecked(false);
-     ui -> bypassCBox -> setEnabled(false);
-     ui -> defaultCBox -> setChecked(true);
+         ui -> bypassCBox -> setChecked(false);
+         ui -> bypassCBox -> setEnabled(false);
+         ui -> defaultCBox -> setChecked(true);
      }
      else{
          ui -> defaultCBox -> setChecked(false);
@@ -35,7 +35,8 @@ bool Confirmation::hashIsEqual(QByteArray fileHash){
 }
 
 void Confirmation::on_buttonBox_accepted()
-{   QFile file(fileName);
+{
+    QFile file(fileName);
     if(ui -> bypassCBox -> isChecked()){
 
         file.rename(fileName + ".bak");
